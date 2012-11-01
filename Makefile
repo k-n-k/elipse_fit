@@ -1,8 +1,8 @@
 TARGET1 = fit_test  # コンパイルしたいプログラム名
-#TARGET2 = svmtrain
+TARGET2 = bmpout 
 #TARGET3 = svmdetect
 SOURCE1 = fit_test.cpp 
-#SOURCE2 = svmtrain.cpp
+SOURCE2 = bmpout.cpp
 #SOURCE3 = svmdetect.cpp
 #OBJS = hoge.o hige.o # プログラムのソースコードの拡張子を.oにしたやつ
 
@@ -20,7 +20,7 @@ OPENCVLIB = `pkg-config --libs opencv`
 # 		$(CXX) -c -o $@ $< $(OBJINCS)
 $(TARGET1):$(SOURCE1)
 	$(CXX) $(OPENCVINC)$(OPENCVLIB) -o $(TARGET1) $(SOURCE1) 
-#$(TARGET2):$(SOURCE2) 
-	#$(CXX) $(OPENCVINC)$(OPENCVLIB) -o $(TARGET2) $(SOURCE2) 
+$(TARGET2):$(SOURCE2) 
+	$(CXX) $(OPENCVINC)$(OPENCVLIB) -o $(TARGET2) $(SOURCE2) 
 #$(TARGET3):$(SOURCE3)
 	#$(CXX) $(OPENCVINC)$(OPENCVLIB) -o $(TARGET3) $(SOURCE3) 
