@@ -73,10 +73,10 @@ int main(int argc, char** argv ){
 
 	//eyezone
 	eyezone1 = cvCreateImage(cvSize(50,50), IPL_DEPTH_8U, 1);
-	minieyezone1 = cvCreateImage(cvSize(64,64), IPL_DEPTH_8U, 1);
+	minieyezone1 = cvCreateImage(cvSize(256,256), IPL_DEPTH_8U, 1);
 	output1 = cvCreateImage(cvSize(512,512), IPL_DEPTH_8U, 1);
    	eyezone2 = cvCreateImage(cvSize(50,50), IPL_DEPTH_8U, 1);
-	minieyezone2 = cvCreateImage(cvSize(64,64), IPL_DEPTH_8U, 1);
+	minieyezone2 = cvCreateImage(cvSize(256,256), IPL_DEPTH_8U, 1);
 	output2 = cvCreateImage(cvSize(512,512), IPL_DEPTH_8U, 1);
 
 	/* create a window and install mouse handler */
